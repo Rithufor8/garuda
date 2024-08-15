@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Navigation</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <!-- Sivana Page -->
+    <div id="sivana-page" class="page">
+        <input type="text" placeholder="Search..." class="search-bar">
+        <div class="segment">Segment 1</div>
+        <div class="segment">Segment 2</div>
+        <div class="segment">Segment 3</div>
+        <div class="segment">Segment 4</div>
+        <div class="segment">Segment 5</div>
+    </div>
+
+    <!-- Garudamap Page -->
+    <div id="garudamap-page" class="page2" style="display: none;">
+        <iframe src="https://my.atlist.com/map/382e5b95-68dd-446c-9e32-44a290b4c10b/?share=true" allow="geolocation 'self' https://my.atlist.com" width="340px" height="720px" loading="lazy" frameborder="0" scrolling="no" allowfullscreen id="atlist-embed"></iframe>
+
+
+    </div>
+
+    <!-- Travel Map Page -->
+    <div id="travelmap-page" class="page2" style="display: none;">
+         <iframe src="https://my.atlist.com/map/382e5b95-68dd-446c-9e32-44a290b4c10b/?share=true" allow="geolocation 'self' https://my.atlist.com" width="340px" height="720px" loading="lazy" frameborder="0" scrolling="no" allowfullscreen id="atlist-embed"></iframe>
+
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <button onclick="showPage('sivana-page')" transition: 0.5s >Sivana</button>
+        <button onclick="showPage('garudamap-page')">Garudamap</button>
+        <button onclick="showPage('travelmap-page')">Travel Map</button>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
